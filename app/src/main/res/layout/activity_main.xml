@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.userprofile.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/headerBG"
+            android:layout_width="match_parent"
+            android:layout_height="266dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/headerBG"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-65dp"
+            app:srcCompat="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView5"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:padding="4dp"
+            android:text="@string/name"
+            android:textAllCaps="true"
+            android:textColor="@color/primaryText"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/birthday"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/country"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:padding="20dp"
+            android:text="@string/content"
+            android:textColor="@color/primaryText"
+            android:textSize="18sp" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:background="@drawable/lk_btn" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/fb_btn" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/twitter_btn" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout3"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:autoLink="email"
+                android:background="@color/contactButton"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="@string/contact_me"
+                android:textAllCaps="true"
+                android:textColor="@color/contactButtonText"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

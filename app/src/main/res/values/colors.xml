@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#484e6e</color>
+    <color name="colorPrimaryDark">#292f50</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- CONTACT BUTTON BACKGROUND -->
+    <color name="contactButton">#9e6a7f</color>
+    <!-- CONTACT BUTTON TEXT -->
+    <color name="contactButtonText">#fff</color>
+    <!-- PRIMARY TEXT COLOR -->
+    <color name="primaryText">#707070</color>
+
+</resources>
